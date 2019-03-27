@@ -1,0 +1,228 @@
+/* Attribution 2: https://stackoverflow.com/questions/8118741/css-font-helvetica-neue */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin: 0;
+  height: 100%;
+  background-color: #FAFAFA;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+/* End Attribution 2 */
+
+#search-bar {
+  border: 1px solid #EFC038;
+  border-radius: 1px;
+  margin: 12px;
+}
+
+#right-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  height: 100%;
+  width: auto;
+  margin: auto;
+  grid-column-gap: 5px;
+}
+
+.liR {
+  float: right;
+  /* border: 1px solid #EFC038;
+  border-radius: 1px; */
+  margin: 4px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+#logo {
+  width: auto;
+  height: 40px;
+  cursor: pointer;
+}
+
+.logo {
+  float: right;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+@media (max-width: 700px) {
+  .liR {
+    float: center;
+  }
+
+  .li {
+    width: 30%;
+  }
+
+  #welcome-grid {
+    padding-top: 100px !important;
+    display: grid;
+    grid-template-rows: 10% 25% 25% 25% 15%;
+  }
+
+  #bottom-grid {
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    /* grid-template-rows: auto auto auto !important; */
+  }
+
+  #bottom-2-grid {
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    /* grid-template-rows: auto auto auto !important; */
+  }
+
+  #bottom-3-grid {
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+    background-color: white;
+    padding-bottom: 30%;
+  }
+
+  #action-grid {
+    display: grid;
+    grid-template-columns: auto !important;
+  }
+}
+
+#welcome-grid {
+  display: grid;
+  grid-template-rows: 10% 30% 30% 30% auto;
+}
+
+#top-grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  background-color: white;
+}
+
+#bottom-grid {
+  display: grid;
+  /*grid-template-columns: 33% 34% 33%;*/
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+}
+
+#bottom-2-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+}
+
+#bottom-3-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: white;
+}
+
+#find {
+  font-size: 40px;
+  color: #EFC038;
+  text-align: center;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: bold;
+}
+
+#better {
+  font-size: 40px;
+  color: #162343;
+  text-align: center;
+  font-style: italic;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.cat-img {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+
+.cat {
+  display: grid;
+  grid-template-rows: auto auto;
+  text-align: center;
+  font-size: 25px;
+  color: #79C3E4;
+  cursor: pointer;
+  border: 1px solid #EFC038;
+  border-radius: 1px;
+}
+
+.cat:hover {
+  background-color: rgba(239,192,56,0.5);
+}
+
+.action {
+  margin: 20px;
+  color: #162343;
+}
+
+#action-grid {
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+
+.more-info {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*Attribution 1: https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black*/
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  width: 100%;
+  /* margin: auto; */
+  /* padding: 10px; */
+  padding-left: 2%;
+  overflow: hidden;
+  background-color: #162343;
+  position: fixed;
+  z-index: 500;
+}
+
+/*https://stackoverflow.com/questions/7415106/html-css-total-page-width-is-wider-than-content*/
+html,body {
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.li {
+  float: left;
+  border: 1px solid #EFC038;
+  border-radius: 1px;
+  margin: 4px;
+  vertical-align: middle;
+}
+
+li a {
+  display: block;
+  width: auto;
+  color: #79C3E4;
+  text-align: center;
+  padding: 14px 16px;
+  /* padding: 14% 16%; */
+  text-decoration: none;
+}
+
+.li a:hover {
+  background-color: rgba(239,192,56,0.5);
+}
+/*End Attribution 1*/
